@@ -1,0 +1,56 @@
+body {
+  padding: 0 2em 2em 2em;
+  margin: .5em;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+.grid-container {
+  padding: 1em;
+  display: grid;
+  grid-gap: 1em 2em;
+  grid-template-columns: repeat(12, 1fr);
+}
+.grid-item {
+  padding: .5em;
+  background-color: #0F0F0F;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  grid-template-areas:
+                      "head head head head head head head head head head head head"
+                      "feat1 feat1 feat1 feat1 feat2 feat2 feat2 feat2 feat3 feat3 feat3 feat3"
+                      "pic1 pic1 pic1 blog1 blog1 blog1 blog2 blog2 blog2 blog3 blog3 blog3"
+                      "footer footer footer footer footer footer footer footer footer footer footer footer"
+}
+
+.one {
+  grid-area: head;
+}
+.two {
+  grid-area: feat1;
+}
+.three {
+  grid-area: feat2;
+}
+.four {
+  grid-area: feat3;
+}
+.five {
+  grid-area: pic1;
+}
+.six {
+  grid-area: blog1;
+}
+.seven {
+  grid-area: blog2;
+}
+.eight {
+  grid-area: blog3;
+}
+.nine {
+  grid-area: footer;
+}
