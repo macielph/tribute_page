@@ -1,19 +1,15 @@
 body {
-  padding: 0 2em 2em 2em;
-  margin: .5em;
-  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   color: white;
   background-color: black;
 }
 
 .grid-container {
-  padding: 1em;
   display: grid;
-  grid-gap: 1em 2em;
+  grid-gap: 1em 1em;
   grid-template-columns: repeat(12, 1fr);
 }
 .grid-item {
-  padding: .5em;
   background-color: #0F0F0F;
   display: flex;
   justify-content: center;
@@ -24,7 +20,7 @@ body {
                       "head head head head head head head head head head head head"
                       "feat1 feat1 feat1 feat1 feat2 feat2 feat2 feat2 feat3 feat3 feat3 feat3"
                       "pic1 pic1 pic1 blog1 blog1 blog1 blog2 blog2 blog2 blog3 blog3 blog3"
-                      "footer footer footer footer footer footer footer footer footer footer footer footer"
+
 }
 
 .one {
@@ -32,12 +28,18 @@ body {
 }
 .two {
   grid-area: feat1;
+  font-size: 100px;
+  padding: .5em;
 }
 .three {
   grid-area: feat2;
+  font-size: 100px;
+  padding: .5em;
 }
 .four {
   grid-area: feat3;
+  font-size: 100px;
+  padding: .5em;
 }
 .five {
   grid-area: pic1;
@@ -51,6 +53,10 @@ body {
 .eight {
   grid-area: blog3;
 }
-.nine {
-  grid-area: footer;
+
+footer {
+  margin: 1em 0em 0em 0em;
+  text-align: center;
+  padding: 1em 0 .3em 0;
+  background-color: #0F0F0F;
 }
