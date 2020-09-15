@@ -1,5 +1,5 @@
 body {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: sans-serif;
   color: white;
   background-color: black;
 }
@@ -8,11 +8,17 @@ body {
   display: grid;
   grid-gap: 1em 1em;
   grid-template-columns: repeat(12, 1fr);
+  padding-bottom: 3.5em;
 }
 .grid-item {
   background-color: #0F0F0F;
   display: flex;
   justify-content: center;
+}
+h1 {
+  line-height: 1;
+  margin: 0em;
+  margin-bottom: .5em;
 }
 
 .grid-container {
@@ -25,22 +31,34 @@ body {
 
 .one {
   grid-area: head;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.headertext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-weight: 1000;
 }
 .two {
   grid-area: feat1;
-  font-size: 70px;
-  padding: .5em;
 }
 .three {
   grid-area: feat2;
-  font-size: 70px;
-  padding: .5em;
 }
 .four {
   grid-area: feat3;
-  font-size: 70px;
+}
+/*Style for these classes*/
+.two, .three, .four{
+  font-weight: 500;
+  font-size: 60px;
   padding: .5em;
 }
+
 .five {
   grid-area: pic1;
 }
@@ -53,10 +71,18 @@ body {
 .eight {
   grid-area: blog3;
 }
+.six, .seven, .eight {
+  text-align: center;
+  flex-direction: column;
+  padding: 1em;
+}
 
 footer {
   margin: 1em 0em 0em 0em;
   text-align: center;
   padding: 1em 0 .3em 0;
   background-color: #0F0F0F;
+  position: fixed;
+  min-width: 100%;
+  bottom: 0;
 }
