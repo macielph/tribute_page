@@ -40,8 +40,8 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: Orbitron;
   font-size: 70px;
-  font-weight: 1000;
 }
 .two {
   grid-area: feat1;
