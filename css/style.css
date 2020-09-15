@@ -28,17 +28,17 @@ body {
 }
 .two {
   grid-area: feat1;
-  font-size: 100px;
+  font-size: 70px;
   padding: .5em;
 }
 .three {
   grid-area: feat2;
-  font-size: 100px;
+  font-size: 70px;
   padding: .5em;
 }
 .four {
   grid-area: feat3;
-  font-size: 100px;
+  font-size: 70px;
   padding: .5em;
 }
 .five {
