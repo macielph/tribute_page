@@ -1,15 +1,17 @@
+@media screen and (max-width: 1280px) {
+  .grid-container {
+    display: grid;
+    grid-gap: 1em 1em;
+    grid-template-columns: repeat(12, 1fr);
+    padding-bottom: 3.5em;
+  }
+
 body {
   font-family: serif;
   color: white;
   background-color: black;
 }
 
-.grid-container {
-  display: grid;
-  grid-gap: 1em 1em;
-  grid-template-columns: repeat(12, 1fr);
-  padding-bottom: 3.5em;
-}
 .grid-item {
   background-color: #0F0F0F;
   display: flex;
@@ -41,7 +43,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: Orbitron;
-  font-size: 70px;
+  font-size: 400%;
 }
 .two {
   grid-area: feat1;
@@ -76,6 +78,7 @@ h1 {
   flex-direction: column;
   padding: 1em;
 }
+
 
 footer {
   margin: 1em 0em 0em 0em;
