@@ -24,12 +24,16 @@ h1 {
   margin: 0em;
   margin-bottom: .5em;
 }
+ul {
+
+}
 
 .grid-container {
   grid-template-areas:
                       "head head head head head head head head head head head head"
                       "feat1 feat1 feat1 feat1 feat2 feat2 feat2 feat2 feat3 feat3 feat3 feat3"
                       "pic1 pic1 pic1 blog1 blog1 blog1 blog2 blog2 blog2 blog3 blog3 blog3"
+                      "list1 list1 list1 list1 list1 list1 list1 list1 list1 list1 list1 list1"
 
 }
 
@@ -61,6 +65,11 @@ h1 {
   font-weight: 500;
   font-size: 2em;
   padding: .5em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Raleway, sans-serif;
 }
 
 .five {
@@ -79,6 +88,11 @@ h1 {
   text-align: center;
   flex-direction: column;
   padding: 1em;
+}
+.nine {
+  grid-area: list1;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -116,5 +130,6 @@ footer {
                       "blog1"
                       "blog2"
                       "blog3"
+                      "list1"
                     }
                   }
