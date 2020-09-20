@@ -3,16 +3,18 @@
 }
 
 body {
-  font-family: serif;
+  font-family: Cabin;
   color: white;
   background-color: black;
 }
 
 .grid-container {
   display: grid;
-  grid-gap: 1em 1em;
+  grid-gap: .5em .5em;
   grid-template-columns: repeat(12, 1fr);
-  padding-bottom: 3.5em;
+  padding-bottom: 3em;
+  padding-left: .5em;
+  padding-right: .5em;
 }
 .grid-item {
   background-color: #0F0F0F;
@@ -23,9 +25,23 @@ h1 {
   line-height: 1;
   margin: 0em;
   margin-bottom: .5em;
+  text-align: center;
 }
 ul {
-
+  columns: 2;
+  list-style-type: disc;
+}
+ul li {
+  text-align: center;
+}
+a:link {
+  color: #bdeff0;
+}
+a:visited {
+  color: #e4bdf0;
+}
+a:hover {
+  font-weight: bold;
 }
 
 .grid-container {
@@ -42,6 +58,7 @@ ul {
   position: relative;
   text-align: center;
   color: white;
+
 }
 .headertext {
   position: absolute;
@@ -60,16 +77,15 @@ ul {
 .four {
   grid-area: feat3;
 }
-/*Style for these classes*/
+/*Style for the feats*/
 .two, .three, .four{
-  font-weight: 500;
   font-size: 2em;
+  font-family: Kufam;
   padding: .5em;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Raleway, sans-serif;
 }
 
 .five {
@@ -84,6 +100,7 @@ ul {
 .eight {
   grid-area: blog3;
 }
+/*Style for the blogs*/
 .six, .seven, .eight {
   text-align: center;
   flex-direction: column;
@@ -91,8 +108,8 @@ ul {
 }
 .nine {
   grid-area: list1;
-  display: flex;
   flex-direction: column;
+  padding: .5em;
 }
 
 
@@ -116,6 +133,12 @@ footer {
     background-color: #0F0F0F;
     display: flex;
     justify-content: center;
+}
+ul {
+  columns: 1;
+}
+#headerimg {
+  filter: brightness(50%);
 }
 :root {
   font-size: 16px
