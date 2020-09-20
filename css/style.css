@@ -112,6 +112,7 @@ a:hover {
   grid-area: list1;
   flex-direction: column;
   padding: .5em;
+  align-items: center;
 }
 
 
