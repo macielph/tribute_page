@@ -58,6 +58,7 @@ a:hover {
   position: relative;
   text-align: center;
   color: white;
+  align-items: flex-start;
 
 }
 .headertext {
@@ -90,6 +91,7 @@ a:hover {
 
 .five {
   grid-area: pic1;
+  align-items: center;
 }
 .six {
   grid-area: blog1;
